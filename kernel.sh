@@ -42,7 +42,7 @@ esac
 
 # Download the XanMod kernel
 echo "Downloading $kernel_package"
-curl -L -o ${kernel_package}.deb https://raw.githubusercontent.com/dler-io/script/kernel/${kernel_package}.deb
+curl -L -o ${kernel_package}.deb https://github.com/dler-io/script/raw/main/kernel/${kernel_package}.deb
 
 if [ $? -ne 0 ]; then
     echo "Failed to download $kernel_package"
